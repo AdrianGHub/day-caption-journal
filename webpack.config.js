@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 
@@ -12,7 +13,7 @@ module.exports = {
 
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name]-[contenthash].bundle.js',
+        filename: '[name]-[hash].bundle.js',
     },
 
     devServer: {
@@ -25,15 +26,15 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(sass|scss)$/,
+                test: /\.sass|scss$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
             {
-                test: /\.(jpe?g|png|svg|gif)$/i,
-                use: 'file-loader',
+                test: /\.jpg|png|svg|gif|jpeg$/i,
+                loader: 'file-loader',
                 options: {
-                    name: '[name][contenthash:6].ext',
-                    outputPath: 'assets/img' 
+                    name: '[name][hash:6].ext',
+                    outputPath: 'assets/public/img' 
                 }
             }
 
@@ -45,7 +46,13 @@ module.exports = {
             template: "./src/content/index.html"
         }),
         new MiniCssExtractPlugin({
-            filename: '[name]-[contenthash].css'
-        })
+            filename: '[name]-[hash].css'
+        }),
+        new CopyPlugin({
+            patterns: [
+              { from: 'src/assets/public/img', to: 'assets/public/img' },
+              { from: 'src/assets/public/icons', to: 'assets/public/icons' },
+            ],
+          }),
     ]
 }
