@@ -111,6 +111,7 @@ export class Notebook {
             });
 
             this.setListItems();
+            this.addListeners();
             this.pageCounter.innerHTML = `number of notes: ${notes.length}`;
             this.notesSection.classList.add("notes--show");
         } else {
@@ -214,9 +215,9 @@ export class Notebook {
                 slide.classList.remove("notes__item-active");
                 if (index === this.notesArray.length - 1) {
                     this.notesArray[0].classList.add("notes__item--active");
-                    newIndex = 0
+                    newIndex = 0;
                 } else {
-                    this.notesArray[index +1].classList.add("notes__item--active");
+                    this.notesArray[index + 1].classList.add("notes__item--active");
                     newIndex = index + 1;
                 }
             }
