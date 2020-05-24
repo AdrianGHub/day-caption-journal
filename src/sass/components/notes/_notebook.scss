@@ -3,23 +3,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &__container {
+        width: var(--max-width);
+      
+        &--title {
+          font-size: 1.5rem;
+          font-weight: map-get($fonts, fw-semi-bold);
+          line-height: 2rem;
+          color: var(--brand-01);
+          height: 32px;
+          text-align: center;
+          margin: 0;
+          margin-bottom: var(--space-xs);
+        }
+      }
+    
+    @media(min-width: 1024px) {
+        margin-right: 60px;
+    }
 }
 
-
-.notebook__container {
-    width: var(--max-width);
-  
-    &--title {
-      font-size: 1.5rem;
-      font-weight: map-get($fonts, fw-semi-bold);
-      line-height: 2rem;
-      color: var(--brand-01);
-      height: 32px;
-      text-align: center;
-      margin: 0;
-      margin-bottom: var(--space-xs);
-    }
-  }
   
   .notes {
     width: var(--max-width);
