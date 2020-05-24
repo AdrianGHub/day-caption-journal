@@ -20,7 +20,9 @@
 
 ## How to run :fire: :fire: :fire: 
 
-1. Clone this repo `https://github.com/AdrianGHub/day-caption-journal.git`
+1. Clone this repo 
+
+`https://github.com/AdrianGHub/day-caption-journal.git`
 
 2. Make sure you have Node.js with npm from [nodejs.org](https://nodejs.org/en/) or via [nvm](https://github.com/nvm-sh/nvm) | [n](https://github.com/tj/n)
 
@@ -34,7 +36,7 @@
 
 5. Localize your directory with project and run following command :
 
-`parcel index.html`
+`npm start`
 
 5. Open website on selected localhost (default is localhost:3000)
 
