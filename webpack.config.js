@@ -33,7 +33,7 @@ module.exports = {
                 use: 'file-loader',
                 options: {
                     name: '[name][contenthash:6].ext',
-                    outputPath: 'images' 
+                    outputPath: 'assets/img' 
                 }
             }
 
