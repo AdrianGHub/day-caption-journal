@@ -1,4 +1,5 @@
 import { Slider } from './Slider';
+import { Notebook } from './Notebook';
 import '../sass/main.scss'
 
 const imageArray = [
@@ -9,3 +10,6 @@ const imageArray = [
 
 const slider = new Slider(imageArray);
 slider.initializeSlider();
+
+const notebook = new Notebook();
+notebook.initializeNotebook();
