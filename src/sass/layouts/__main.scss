@@ -3,5 +3,11 @@
 
 .main {
     padding: var(--space-s);
-    width: 1024px;
+    width: 1200px;
+
+    @media(min-width: 1024px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
