@@ -5,4 +5,8 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+
+    @media (min-width: 1024px) {
+        overflow: hidden;
+    }
 }
