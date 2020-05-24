@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caption The Day</title>
+<link href="main-827880fab227145d5c56.css" rel="stylesheet"></head>
+    <body>
+        <main class="main">
+            <div class="slider">
+                <section class="slider__container">
+                <button class="slider__button slider__button--prev" data-button-prev></button>
+                    <figure class="slide" data-slide></figure>
+                <button class="slider__button slider__button--next" data-button-next></button>
+                </section>
+            </div>
+
+            <div class="notebook">
+                <section class="notebook__container">
+                    <h1 class="notebook__container--title"> Notebook 📓</h1>
+                    <form class="form">
+                    <label for="note" class="form__label">Type new note</label>
+                    <textarea
+                        id="note"
+                        name="note"
+                        note=""
+                        placeholder="Leave the field to run autosave"
+                        class="form__text" data-form
+                    ></textarea>
+                    </form>
+                </section>
+            
+                <section class="notes" data-notes>
+                    <h2 class="notes__title">Your notes 📔</h2>
+                    <ul class="notes__list" data-notes-list></ul>
+                    <nav class="navigation">
+                    <button class="navigation__btn" data-notes-left-btn>
+                        <img
+                        src="./assets/public/icons/arrow-left.svg"
+                        alt="Move left button."
+                        class="navigation__btn-image"
+                        />
+                    </button>
+                    <span class="navigation__counter" data-counter></span>
+                    <button class="navigation__btn" data-notes-right-btn>
+                        <img
+                        src="./assets/public/icons/arrow-right.svg"
+                        alt="Move right button."
+                        class="navigation__btn-image"
+                        />
+                    </button>
+                    </nav>
+                </section>
+            </div>
+
+
+
+        </main>
+    <script src="main-827880fab227145d5c56.bundle.js"></script></body>
+</html>
