@@ -17,7 +17,7 @@
 
             <div class="notebook">
                 <section class="notebook__container">
-                    <h1 class="notebook__title"> Notepad 📓</h1>
+                    <h1 class="notebook__container--title"> Notebook 📓</h1>
                     <form class="form">
                     <label for="note" class="form__label">Type new note</label>
                     <textarea
@@ -25,24 +25,24 @@
                         name="note"
                         note=""
                         placeholder="Leave the field to run autosave"
-                        class="form__text form__text--js"
+                        class="form__text" data-form
                     ></textarea>
                     </form>
                 </section>
             
-                <section class="notes notes--js" data-notes>
+                <section class="notes" data-notes>
                     <h2 class="notes__title">Your notes 📔</h2>
-                    <ul class="notes__list notes__list--js" data-notes-list></ul>
+                    <ul class="notes__list" data-notes-list></ul>
                     <nav class="navigation">
-                    <button class="navigation__btn navigation__left-btn--js" data-notes-left-btn>
+                    <button class="navigation__btn" data-notes-left-btn>
                         <img
                         src="./assets/public/icons/arrow-left.svg"
                         alt="Move left button."
                         class="navigation__btn-image"
                         />
                     </button>
-                    <span class="navigation__counter counter--js"></span>
-                    <button class="navigation__btn navigation__right-btn--js" data-notes-right-btn>
+                    <span class="navigation__counter" data-counter></span>
+                    <button class="navigation__btn" data-notes-right-btn>
                         <img
                         src="./assets/public/icons/arrow-right.svg"
                         alt="Move right button."
