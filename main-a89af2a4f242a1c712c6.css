@@ -426,7 +426,6 @@ body {
       margin-right: 60px; } }
   .slider__container {
     max-width: 1000px;
-    min-width: 300px;
     display: flex;
     align-items: center;
     position: relative;
