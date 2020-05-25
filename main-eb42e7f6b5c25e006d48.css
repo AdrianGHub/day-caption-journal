@@ -419,13 +419,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 60px auto; }
+  max-width: 600px;
+  min-width: 300px;
+  margin: 60px auto;
+  width: 70%; }
+  @media (min-width: 770px) {
+    .slider {
+      width: 90%; } }
   @media (min-width: 1024px) {
     .slider {
       justify-content: baseline;
-      margin-right: 60px; } }
+      margin-right: 60px;
+      width: 100%; } }
   .slider__container {
-    max-width: 1000px;
     display: flex;
     align-items: center;
     position: relative;
