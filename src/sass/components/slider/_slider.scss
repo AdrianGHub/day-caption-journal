@@ -6,12 +6,12 @@
 
     @media(min-width: 1024px) {
         justify-content: baseline;
+        margin-right: 60px;
     }
 
     &__container {
         max-width: 1000px;
         min-width: 300px;
-        width: 70%;
         display: flex;
         align-items: center;
         position: relative;
